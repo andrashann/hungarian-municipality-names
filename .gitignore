@@ -1,5 +1,5 @@
-.osm
-.ipynb
+*.osm
+*.ipynb
 .ipynb_checkpoints/
-.zip
-.txt
+*.zip
+*.txt
