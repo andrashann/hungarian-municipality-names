@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Magyar településnevek első tagja – térkép</title>
-	<meta property="og:title" content="Magyar településnevek első tagja – térkép" />
+	<title>Hungarian municipality name prefixes – maps</title>
+	<meta property="og:title" content="Hungarian municipality names" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://andrashann.github.io/site/hungarian-municipality-names/" />
+	<meta property="og:url" content="http://hann.io/hungarian-municipality-names/" />
 	<meta property="og:image"  content="telepulesek.jpg" /> 
 	<meta charset="utf-8" />
 
@@ -82,15 +82,15 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>Települések nevének első tagja</h4>' +  (props ?
+			this._div.innerHTML = '<h4>Prefix of municiaplity names</h4>' +  (props ?
 				'<b>' + props.CATEGORY + '</b>'
-				: 'Vidd az egeret egy<br />teleüléscsoport fölé!');
+				: 'Point the mouse at a<br />group of municipalities!');
 		};
 
 		info.addTo(map);
 
 		var mapCategories = ['Víz', 'Hegy', 'Megye', 'Egyéb'];
-		var mapCategoryDescription = ['Vizek', 'Hegységek, tájak', 'Megyék, városok', 'Egyéb'];
+		var mapCategoryDescription = ['Bodies of water', 'Mountain ranges, regions', 'Counties, cities', 'Other'];
 		
 		// get color depending on population density value
 		function getColor(d) {
